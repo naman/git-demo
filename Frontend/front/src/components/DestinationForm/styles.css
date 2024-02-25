@@ -1,0 +1,17 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .form-container form {
+    margin-top: 20px;
+  }
+  
+  .form-container input,
+  .form-container button {
+    margin: 10px 0;
+  }
+  
