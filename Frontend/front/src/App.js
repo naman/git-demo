@@ -20,10 +20,7 @@ import AppointmentSuccess from './components/AppointmentSuccess';
 import SummaryQuestion from './components/SummaryQuestion';
 import DestinationConfirmation from './components/DestinationConfirmation';
 import DestinationSuccess from './components/DestinationSuccess';
-
-
-
-
+import MusicPlayer from './components/MusicPlayer/index.jsx';
 
 
 // Define the main App component
@@ -45,6 +42,7 @@ function App() {
               <Link to="/community_tips" className="nav-button">Community Tips</Link>
               <Link to="/driving_summary" className="nav-button">Driving Summary</Link>
               <Link to="/community_support" className="nav-button">Community Support</Link>
+              <Link to="/music_player" className="nav-button">Music Player</Link>
             </nav>
           </div>
         } />
@@ -66,6 +64,7 @@ function App() {
           <Route path="/appointment_success" element={<AppointmentSuccess />} />
           <Route path="/summary_question" element={<SummaryQuestion />} />
           <Route path="/community_support" element={<CommunitySupport />} />
+          <Route path="/music_player" element={<MusicPlayer />} />
       </Routes>
     </Router>
   );
