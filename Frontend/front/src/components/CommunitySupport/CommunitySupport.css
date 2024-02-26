@@ -1,0 +1,42 @@
+.community-support-container {
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .community-support-container h1, .community-support-container h2 {
+    color: #ffcc00;
+  }
+  
+  .community-support-container p, .community-support-container ul, .community-support-container a {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .community-support-container a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .community-support-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .community-support-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .community-support-container li {
+    margin-bottom: 10px;
+  }
+  
+  .community-support-container li::before {
+    content: '➤ ';
+    color: #ffcc00;
+  }
+  

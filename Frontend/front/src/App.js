@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // import components
+import Forum from './components/Forum';
+import CreatePost from './components/Forum/CreatePost';
+import CommunitySupport from './components/CommunitySupport';
+import AboutUs from './components/AboutUs';
 import DestinationForm from './components/DestinationForm';
 import Weather from './components/Weather/index.jsx';
 import Report from './components/Report';
@@ -21,6 +25,7 @@ import DestinationSuccess from './components/DestinationSuccess';
 
 
 
+
 // Define the main App component
 function App() {
   return (
@@ -29,6 +34,7 @@ function App() {
         <Route path="/" element={
           <div className="App">
             <header className="App-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Schneider_National_logo.svg" alt="Schneider Logo" className="app-logo"/>
               <h1>Welcome to Schneider Truck</h1>
             </header>
             <nav className="App-nav">
@@ -42,6 +48,9 @@ function App() {
             </nav>
           </div>
         } />
+          <Route path="/forum" element={<Forum />} />
+          <Route path="/forum/create" element={<CreatePost />} />
+          <Route path="/about_us" element={<AboutUs />} />
           <Route path="/destination" element={<DestinationForm />} />
           <Route path="/destination/confirmation" element={<DestinationConfirmation />} />
           <Route path="/destination/success" element={<DestinationSuccess />} />
@@ -54,12 +63,14 @@ function App() {
           <Route path="/driving_summary" element={<DrivingSummary />} />
           <Route path="/feel_unwell" element={<FeelUnwell />} />
           <Route path="/summary_question" element={<SummaryQuestion />} />
-          <Route path="/feel_unwell" element={<FeelUnwell />} />
           <Route path="/appointment_success" element={<AppointmentSuccess />} />
           <Route path="/summary_question" element={<SummaryQuestion />} />
+          <Route path="/community_support" element={<CommunitySupport />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+

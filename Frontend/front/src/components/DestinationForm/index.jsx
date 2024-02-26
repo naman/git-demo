@@ -1,6 +1,8 @@
 // 文件路径: src/components/DestinationForm/index.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import truckImage from '../../assets/truck.jpeg'; // 确保正确导入图片
+import './index.css'; // Add correct import statement for CSS file
 
 function DestinationForm() {
   const [destination, setDestination] = useState('');
@@ -13,6 +15,7 @@ function DestinationForm() {
   };
 
   return (
+    <div className="form-container">
     <form onSubmit={handleSubmit}>
       <label htmlFor="destination">Enter Your Destination:</label>
       <input
@@ -24,6 +27,8 @@ function DestinationForm() {
       />
       <button type="submit">Submit</button>
     </form>
+    <img src={truckImage} alt="Truck" className="truck-image" /> {/* 添加卡车图片 */}
+  </div>
   );
 }
 

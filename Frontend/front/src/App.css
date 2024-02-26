@@ -4,6 +4,12 @@
   font-family: 'Arial', sans-serif;
 }
 
+.app-logo {
+  width: 200px; /* 或根据你的布局需要调整 */
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .App-header {
   background-color: #ff8c00; /* Bright header color */
   padding: 20px;
@@ -149,6 +155,7 @@
   transform: translateY(-2px);
   background-color: #0056b3;
 }
+
 .weather-container {
   display: flex;
   flex-direction: column;
@@ -232,3 +239,4 @@
 }
 
 /* Assuming .back-button styling is already defined as per previous instructions */
+

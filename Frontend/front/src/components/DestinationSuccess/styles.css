@@ -1,10 +1,9 @@
-.success-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .success-container a {
-    display: inline-block;
-    margin-top: 20px;
-  }
-  
+.confirmation-container, .success-container {
+  text-align: center;
+  padding: 20px;
+  color: var(--schneider-white);
+}
+
+.confirmation-container button, .success-container a {
+  margin-top: 20px;
+}
