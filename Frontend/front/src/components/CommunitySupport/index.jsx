@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CommunitySupport.css';
 
+
 function CommunitySupport() {
   return (
+    <>
     <div className="community-support-container">
       <h1>Community Support</h1>
       <p>Welcome to the Schneider Trucking Community Support page. Here, you can find resources, share experiences, and connect with other trucking professionals.</p>
@@ -25,6 +27,8 @@ function CommunitySupport() {
       <p>Email: <a href="mailto:support@schneidertruckingexample.com">support@schneidertruckingexample.com</a></p>
       <p>Phone: 1-800-555-1234</p>
     </div>
+    <Link to="/" className="back-to-home-link">Back to Home Page</Link>
+    </>
   );
 }
 

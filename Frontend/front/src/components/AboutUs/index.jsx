@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUs.css'; // 确保有对应的CSS文件
+import { Link } from 'react-router-dom';
 
 function AboutUs() {
   return (
@@ -16,6 +17,7 @@ function AboutUs() {
         <li>Phone: 1-800-123-4567</li>
         <li>Address: 1234 Trucking Blvd, Green Bay, WI</li>
       </ul>
+      <Link to="/" className="back-to-home-link">Back to Home Page</Link>
     </div>
   );
 }

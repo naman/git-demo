@@ -40,3 +40,18 @@
     color: #ffcc00;
   }
   
+  .back-to-home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Schneider yellow */
+    color: #333; /* Dark text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .back-to-home-link:hover {
+    background-color: #e6b800; /* A darker yellow on hover */
+  }
+  

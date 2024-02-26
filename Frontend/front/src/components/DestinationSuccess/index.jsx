@@ -1,6 +1,7 @@
 // 文件路径: src/components/DestinationSuccess/index.jsx
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function DestinationSuccess() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function DestinationSuccess() {
         height="400"
         title="Waze live map"
       ></iframe>
+      <Link to="/" className="back-to-home-link">Back to Home Page</Link>
     </div>
   );
 }
