@@ -1,1 +1,1 @@
-# git-demo
+# Schneider-2‘s Git
